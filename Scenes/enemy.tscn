@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyliclwock67g"]
+
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_oq0tm"]
+[ext_resource type="Texture2D" uid="uid://dk7psyrftbypl" path="res://Assets/enemy.png" id="2_2ykn6"]
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_mask = 0
+script = ExtResource("1_oq0tm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5.96046e-08, 0)
+rotation = 1.5708
+scale = Vector2(0.489712, 0.489712)
+texture = ExtResource("2_2ykn6")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+rotation = 1.5708
+polygon = PackedVector2Array(0, -61, 43, -13, 62, 41, 3, 59, -60, 46, -38, -18)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

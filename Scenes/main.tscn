@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbnqbp4p5gbuj"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_phwrd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yvh8o"]
+font_size = 80
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_phwrd")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 12.0
+offset_top = 169.0
+offset_right = 587.0
+offset_bottom = 279.0
+text = "Dodge Bash"
+label_settings = SubResource("LabelSettings_yvh8o")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 53.0
+offset_top = 343.0
+offset_right = 548.0
+offset_bottom = 404.0
+text = "Play
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

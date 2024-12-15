@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://iotl2edukrg6"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_bmv3l"]
+[ext_resource type="Texture2D" uid="uid://bqr8fkwtijnl0" path="res://Assets/player.png" id="2_5wr7m"]
+[ext_resource type="Texture2D" uid="uid://mid4mb6cyour" path="res://Assets/shield-sprite.png" id="3_lyxhd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6dcv"]
+size = Vector2(76, 78)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+motion_mode = 1
+script = ExtResource("1_bmv3l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.5034e-06, -2.5034e-06)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_5wr7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o6dcv")
+
+[node name="ShieldTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="ShieldSprite" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.515381, 0.515381)
+texture = ExtResource("3_lyxhd")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="timeout" from="ShieldTimer" to="." method="_on_shield_timer_timeout"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="25.708427mm"
+   height="25.708424mm"
+   viewBox="0 0 25.708427 25.708424"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="dodge-game.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#8c8c8c"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#ffffff00"
+     inkscape:zoom="1.5643378"
+     inkscape:cx="357.33969"
+     inkscape:cy="357.97894"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="25.708427"
+       height="25.708424"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.945333,-56.49089)">
+    <rect
+       style="fill:#f2f2f2;stroke-width:0.15875"
+       id="rect1"
+       width="25.708427"
+       height="25.708427"
+       x="41.945332"
+       y="56.490887"
+       ry="3.4672542"
+       inkscape:export-filename="icon.svg"
+       inkscape:export-xdpi="252.92873"
+       inkscape:export-ydpi="252.92873" />
+    <g
+       id="g3">
+      <rect
+         style="fill:#1a1a1a;stroke-width:0.15875"
+         id="rect2"
+         width="2.6215832"
+         height="6.5116739"
+         x="50.14835"
+         y="62.410591"
+         ry="1.3107916" />
+      <rect
+         style="fill:#1a1a1a;stroke-width:0.15875"
+         id="rect3"
+         width="2.6215832"
+         height="6.5116739"
+         x="56.829159"
+         y="62.410591"
+         ry="1.3107916" />
+    </g>
+  </g>
+</svg>
